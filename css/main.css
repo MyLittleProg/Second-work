@@ -4,9 +4,79 @@
     box-sizing: border-box;
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+@media (max-width:1200px){
+    .card h1{
+        font-size: 27px;
+    }
+    .three-cards__card h1{
+        font-size: 25px;
+    }
+    .three-cards__card{
+        width: calc(33% - 40px) !important;
+    }
+    .container{
+        max-width: 970px !important;
+    }
+    .menu__lists a{
+        margin-left: 10px !important;
+    }
+    .footer__lists{
+        margin-left: 15% !important;
+    }
 }
 
+@media (max-width:992px){
+    .card h1{
+        font-size: 20px;
+    }
+    .three-cards__card h1{
+        font-size: 18px;
+    }
+    .title{
+        height: 25px !important;
+    }
+    .container{
+        max-width: 768px !important;
+    }
+    .header__menu{
+        margin: 10px 40% !important;
+    }
+    .footer__lists{
+        margin-left: 5% !important;
+    }
+    
+}
+@media (max-width:767px){
+    .three-cards{
+        margin: 0px 0px !important;
+    }
+    .header__menu{
+        display: none;
+    }
+    .footer__lists{
+        display: none !important;
+    }
+    .card h1{
+        font-size: 17.5px;
+    }
+    .container{
+        max-width: none !important;
+    }
+    .card{
+        width: calc(100% - 40px) !important;
+    }
+    .three-cards__card{
+        width: calc(100% - 40px) !important;
+    }
+    .two-cards{
+        height: 40% !important;
+    }
+    .three-cards{
+        height: 40% !important;
+    }
+}
 .container{
     max-width: 1360px;
     margin: 0 auto;
@@ -27,12 +97,14 @@ body{
     text-decoration: none;
 }
 .header__menu{
+    margin: 10px 50%;
+    width: 40%;
+    height: 30px ;
     position: absolute;
 }
 .menu__lists{
     position: absolute;
     list-style: none;
-    margin: 10px 700px;
     display: flex;
 }
 .menu__list::before{
@@ -51,7 +123,7 @@ body{
 }
 .title{
     margin: 10px auto;
-    width: 200px;
+    width: 28%;
     height: 35px;
     text-align: center;
     background-color: gray;
@@ -59,7 +131,7 @@ body{
 .content{
     text-align: center;
     margin:10px auto;
-    width: 280px;
+    width: 90%;
     height: 190px;
     background-color: aquamarine;
 }
@@ -81,6 +153,7 @@ body{
     height: 250px;
 }
 .three-cards{
+    margin: 0px -35px;
     flex-wrap: wrap;
     height: 300px;
     display: flex;
@@ -91,13 +164,17 @@ body{
     background-color: rgb(44, 113, 173);
 }
 .footer__lists{
+    margin-top: 10px;
     margin-left: 22%;
     list-style: none;
     display: flex;
 }
 .footer__lists a{
-     margin-left:100px;
+    margin-left:100px;
     text-decoration: none;
     color:gray;
     font-size: 20px;
+}
+.title_m{
+    width: 40%;
 }
