@@ -149,7 +149,7 @@ body{
         height: 2px;
         width: 10px;
         top: 5px;
-        
+        position: absolute;
     }
     .item__title::after{
         transform: rotate(-40deg);

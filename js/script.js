@@ -10,9 +10,11 @@
         if(document.querySelector(".plashka").classList == 'plashka active-plashka'){
             document.querySelector(".header__menu").style.display = "block";
             document.body.style.overflow = "hidden";
+            document.querySelector('.wrapper').style.display = "none";
         }else{
             document.querySelector(".header__menu").style.display = "none";
             document.body.style.overflow = "scroll";
+            document.querySelector('.wrapper').style.display = "block";
         }
     })
 
